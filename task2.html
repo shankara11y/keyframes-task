@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Floating stars night sky</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: radial-gradient(circle at bottom, #020111, black);
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            top: 100%;
+            animation: float 6s linear infinite;
+        }
+
+        .star1 {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .star2 {
+            left: 25%;
+            animation-delay: 1.5s;
+        }
+
+        .star3 {
+            left: 40%;
+            animation-delay: 2s;
+        }
+
+        .star4 {
+            left: 55%;
+            animation-delay: 3s;
+        }
+
+        .star5 {
+            left: 70%;
+            animation-delay: 4s;
+        }
+
+        .star6 {
+            left: 85%;
+            animation-delay: 2.5s;
+        }
+
+        .star7 {
+            left: 15%;
+            animation-delay: 0s;
+        }
+
+        .star8 {
+            left: 95%;
+            animation-delay: 1.5s;
+        }
+
+        .star9{
+            left: 28%;
+            animation-delay: 2s;
+        }
+
+        .star10{
+            left: 5%;
+            animation-delay: 3s;
+        }
+
+        .star11{
+            left: 78%;
+            animation-delay: 4s;
+        }
+
+        .star12{
+            left: 85%;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes float {
+            from {
+                top: 100%;
+                opacity: 0;
+            }
+
+            to {
+                top: -10px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="star star1"></div>
+    <div class="star star2"></div>
+    <div class="star star3"></div>
+    <div class="star star4"></div>
+    <div class="star star5"></div>
+    <div class="star star6"></div>
+    <div class="star star7"></div>
+    <div class="star star8"></div>
+    <div class="star star9"></div>
+    <div class="star star10"></div>
+    <div class="star star11"></div>
+    <div class="star star12"></div>
+</body>
+
+</html>
