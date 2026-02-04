@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+ <style>
+  .loading{
+      
+        animation : colorchange 1s infinite;
+    }
+
+    @keyframes colorchange{
+        from {color:orange;}
+        to {color:blue;}
+    }
+
+    .circle{
+        width:50px;
+        height:50px;
+        border: 5px solid grey;
+        border-left:5px solid blue;
+        border-radius: 50%;
+        animation : circular 1s linear infinite;
+    }
+
+    @keyframes circular{
+        from {transform: rotate(0deg); }
+        to {transform: rotate(360deg);}
+
+    }
+
+.dot{
+        
+        width:30px;
+        height:30px;
+        background:black;
+        border-radius:50%;
+        position:relative;
+        animation : float 1.5s infinite alternate;
+        display : inline-block;
+    }
+
+    @keyframes float{
+        from {top:0px;}
+        to {top:80px;}
+    }
+
+
+.logo{
+        width:80px;
+        height:80px;
+        text-align: center;
+        padding-top : 30px; 
+        background:green;
+        position:relative;
+        animation : moveupdown 2s infinite alternate;
+    }
+
+    @keyframes moveupdown{
+        from {top:0px;}
+        to {top:80px;}
+    }
+
+.container{
+        width:300px;
+        height:20px;
+        background:rgb(125, 122, 122);
+        overflow:hidden;
+    }
+    .bar{
+        width:300px;
+        height:20px;
+        background:pink;
+        position:relative;
+        animation:slide 2s infinite linear;
+    }
+    @keyframes slide{
+        from{right:300px;}
+        to{right:0px;}
+    }
+    
+ </style>
+</head>
+<body>
+
+    <p>Task 1 : blinking text loader</p>
+    <p class = "loading">Loading...</p>
+    
+
+    <p>Task 2 : Rotating Circular Loader</p>
+    <div class = "circle"></div>
+
+    <p>Task 3 : Bouncing Dots</p>
+    <div class = "dot"> </div>
+    <div class = "dot"></div>
+        <div class = "dot"></div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+
+        <p>Task 4: Floating logo</p>
+        <div class = "logo">logo</div>
+<br>
+<br>
+<br>
+
+
+        <h3>Task 5: Sliding Progress Bar</h3>
+<div class="container">
+    <div class="bar"></div>
+</div>
+</body>
+</html>
