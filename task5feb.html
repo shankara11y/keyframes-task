@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Photography Website</title>
+    <style>
+        /* .img {
+            transition: 1.5s ease-in-out;
+        }
+
+        .content {
+            transform: scale(30px);
+
+        }
+
+         */
+
+        .content:hover img {
+            transform: scale(1.5);
+             transform: translateX(50px);
+             z-index: 1;
+        }
+
+
+        .allcontent:hover .content img {
+            filter: blur(5px);
+            transition: 0.3s;
+        }
+
+        .content:hover img {
+            
+            filter: blur(0) !important ;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform:  scale(2.5);
+            height: 400px;
+            width: auto;
+            animation: zoomphoto 0.2s ease-out forwards;
+        }
+
+       @keyframes zoomphoto {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    80% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+
+
+        .allcontent {
+
+            display: table;
+
+
+        }
+
+        .content:hover img{
+                        height: 400px;
+
+        }
+
+        .row {
+            display: table-row;
+        }
+
+
+        .content {
+            display: table-cell;
+            padding: 10px;
+        }
+
+        .content img {
+            width: 200px;
+        }
+
+        img {
+            height: 250px;
+        }
+
+        #img4 {
+            height: 250px;
+        }
+
+
+
+
+
+
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .small-heading {
+            color: #1c6764;
+            font-weight: bold;
+            text-align: center;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #1c6764;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #fffdfd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #1c6764;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .theory-section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px 40px;
+            color: #333;
+        }
+
+
+        .theory-section h2 {
+            text-align: center;
+            color: #1c6764;
+            margin-bottom: 20px;
+        }
+
+
+        .theory-section h3 {
+            color: #1c6764;
+            margin-top: 30px;
+        }
+
+
+        .theory-section p {
+            margin-bottom: 15px;
+        }
+
+
+        .theory-section ul {
+            margin-left: 20px;
+        }
+
+
+        .theory-section li {
+            margin-bottom: 10px;
+        }
+
+
+
+        footer {
+            background-color: #2f4f4f;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 80px;
+        }
+
+
+        .footer-container {
+            max-width: 1100px;
+
+        }
+
+
+        .footer-columns {
+            display: table;
+            width: 100%;
+        }
+
+
+        .footer-column {
+            display: table-cell;
+            padding: 10px 20px;
+        }
+
+
+        .footer-column h4 {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+
+        .footer-column a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Kings Photographer Website</h1>
+        <h3></h3>
+    </header>
+    <div>
+        <nav>
+            <a href="">
+                Home
+            </a>
+            <a href="">
+                Prices
+            </a>
+            <a href="">
+                Blog
+            </a>
+            <a href="">
+                Explore
+            </a>
+            <a href="">
+                Services
+            </a>
+            <a href="">
+                Community
+            </a>
+        </nav>
+
+        <div class="allcontent">
+
+            <div class="row">
+                <div class="content">
+                    <img src="https://image6.photobiz.com/8933/21_20251018221015_9790528_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img src="https://image14.photobiz.com/10152/21_20251210222327_9885787_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img id="img3" src="https://image10.photobiz.com/8495/21_20251018220813_9790524_xlarge.jpg">
+                </div>
+                <div class="content">
+                    <img src="https://image5.photobiz.com/8905/21_20251210222252_9885785_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img src="https://image6.photobiz.com/8933/21_20251210222311_9885786_large.jpg">
+                </div>
+                <div class="content">
+                    <img id="img4" src="https://visualcomposer.com/wp-content/uploads/2019/07/charlie-shotme.jpg">
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="content">
+                    <img src="https://image5.photobiz.com/8905/21_20251210201345_9885737_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img src="https://image7.photobiz.com/8912/21_20251210201347_9885741_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img id="img3" src="https://image8.photobiz.com/8585/21_20251210222224_9885784_xlarge.jpg">
+                </div>
+                <div class="content">
+                    <img id="img4" src="	https://image4.photobiz.com/8911/21_20251210201345_9885736_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img
+                        src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg">
+                </div>
+                <div class="content">
+                    <img src="https://image13.photobiz.com/10309/21_20251210201346_9885738_xlarge.jpg">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="content">
+                    <img id="img4" src="	https://image14.photobiz.com/10152/21_20240412201639_8910811_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img src="https://image4.photobiz.com/8911/21_20251210201347_9885742_xlarge.jpg">
+                </div>
+                <div class="content">
+                    <img id="img4" src="https://image13.photobiz.com/10309/21_20250417195400_9523309_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img src="https://image13.photobiz.com/10309/21_20251027080925_9801635_xlarge.jpg">
+                </div>
+                <div class="content">
+                    <img id="img4" src="https://image11.photobiz.com/8586/21_20250417195401_9523310_xlarge.jpg">
+                </div>
+
+                <div class="content">
+                    <img src="https://image3.photobiz.com/8929/21_20251210221710_9885783_large.jpg">
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <section class="theory-section">
+
+
+        <h2>Why Portrait Photography Remains Relevant</h2>
+
+
+        <p>
+            Portrait photography continues to hold a powerful place in the modern world because it captures more than
+            just faces — it tells stories. Every portrait reflects personality, emotion, and a moment in time, creating
+            a lasting connection between the subject and the viewer.
+        </p>
+
+
+        <h3>Historical Significance</h3>
+        <ul>
+            <li><strong>Records of the Past:</strong> Portraits preserve the appearances, lifestyles, and values of
+                people from different eras.</li>
+            <li><strong>Reflection of Society:</strong> Clothing, expressions, and settings reveal cultural and social
+                changes.</li>
+            <li><strong>Documenting Change:</strong> Comparing portraits across generations shows how humanity evolves.
+            </li>
+        </ul>
+
+
+        <h3>Artistic and Cultural Value</h3>
+        <ul>
+            <li><strong>Visual Language:</strong> Composition, lighting, and color express mood and emotion.</li>
+            <li><strong>Human Connection:</strong> The human face naturally draws empathy and emotional response.</li>
+            <li><strong>Celebrating Individuality:</strong> Every portrait highlights a unique story and personality.
+            </li>
+        </ul>
+
+
+        <h3>Beyond Photography</h3>
+        <p>
+            Portraits often become family heirlooms, professional milestones, and powerful tools for raising awareness
+            about causes. They serve as timeless reminders of moments, achievements, and human experiences.
+        </p>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+
+
+            <div class="footer-columns">
+
+
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Prices</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Community</a>
+                    <a href="#">Explore</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <a href="#">Portraits</a>
+                    <a href="#">Events</a>
+                    <a href="#">Headshots</a>
+                    <a href="#">Bookings</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>Email: kingphotography@email.com</p>
+                    <p>Phone: +91 9892701297</p>
+                    <p>Location: Mumbai, India</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+                © 2026 Kings Photography | All Rights Reserved
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
